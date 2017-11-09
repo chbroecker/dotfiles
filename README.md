@@ -8,8 +8,12 @@
 
 ## Sources
 
-* Dotfiles Tutorial https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
-* Prompt Tutorial http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
+* Dotfiles Tutorial 
+https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789
+* Prompt Tutorial 
+https://www.howtogeek.com/307701/how-to-customize-and-colorize-your-bash-prompt/
+* Add Color to ls command 
+http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
 
 
 
