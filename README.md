@@ -25,3 +25,5 @@ http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
 	* sudo scutil --get ComputerName "newname"
 	* sudo scutil --get LocalHostName "newname"
 	* sudo scutil --get HostName "newname"
+* Symlink
+	* ln -s ~/.dotfiles/runcom/.bash_profile ~/
