@@ -1,5 +1,9 @@
 # dotfiles
 
+# Download (renames it to make it 'hidden')
+
+git clone git@github.com:chbroecker/dotfiles.git .dotfiles
+
 
 ## Sublime
 * setting up the sublime CLI 
