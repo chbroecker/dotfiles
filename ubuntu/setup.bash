@@ -42,6 +42,12 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 sudo apt-get update
 sudo apt-get install spotify-client
 
+# Installing the current vim
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+
 # Installing Dotfiles
 git clone git@github.com:chbroecker/dotfiles.git .dotfiles
 ln -s ~/.dotfiles/ubuntu/.tmux.conf ~/
+ln -s ~/.dotfiles/vim/.vimrc ~/
