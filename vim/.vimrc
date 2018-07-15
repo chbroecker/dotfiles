@@ -17,7 +17,10 @@ filetype plugin indent on
 " Necessary for Lightline
 set laststatus=2
 set noshowmode
-let g:lightline = {'colorscheme' : 'one'}
+let g:lightline = {
+    \ 'colorscheme' : 'one',
+    \ 'separator': { 'left': '', 'right': '' },
+    \ 'subseparator': { 'left': '', 'right': '' }}
 
 " ColorTheme
 syntax on
