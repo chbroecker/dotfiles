@@ -51,12 +51,14 @@ ln -s ~/.dotfiles/ubuntu/.tmux.conf ~/
 ln -s ~/.dotfiles/vim/.vimrc ~/
 
 # Installing Powerline Font
+# @TODO figure out which of these is actually needed
 cd ~
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 mkdir .fonts
 mkdir -p .config/fontconfig/conf.d
 fc-cache -vf ~/.fonts/ 	# clearing font cache
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d
+cp ~/.dotfiles/resources/powerline-symbols.ttf /usr/share/fonts/truetype/
 
 # Setting up Tmux to use the TPM
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
