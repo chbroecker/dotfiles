@@ -21,14 +21,15 @@ let g:lightline = {'colorscheme' : 'one'}
 
 " ColorTheme
 syntax on
-let g:onedark_terminal_italics = 1
+"let g:onedark_terminal_italics = 1
 colorscheme onedark
 
 " Python
 let g:python_highlight_all = 1
 
 " NerdTree
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
+nmap <F2> :NERDTreeToggle<CR>
 
 " Other
 set encoding=utf-8
