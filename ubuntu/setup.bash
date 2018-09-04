@@ -30,7 +30,7 @@ dconf write /org/gnome/desktop/interface/cursor-theme '"Paper"'
 curl -sL https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
 sudo apt-get update
-sudo apt-get instal atom
+sudo apt-get install atom
 apm install file-icons
 
 # Installing Spotify
@@ -39,14 +39,16 @@ echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sourc
 sudo apt-get update
 sudo apt-get install spotify-client
 
-# Installing the current vim
+# Installing the current vim and vundle
 sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update
 sudo apt install vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 
 # Installing Dotfiles
 git clone git@github.com:chbroecker/dotfiles.git .dotfiles
-ln -s ~/.dotfiles/ubuntu/.tmux.conf ~/
+ln -s ~/.dotfiles/tmux/.tmux.conf ~/
 ln -s ~/.dotfiles/vim/.vimrc ~/
 
 # Installing Powerline Font
