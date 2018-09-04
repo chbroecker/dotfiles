@@ -12,8 +12,7 @@ sudo apt-get install arc-theme
 # Installing the Paper Icon Theme
 sudo add-apt-repository -u ppa:snwh/ppa
 sudo apt-get update
-sudo apt-get install
-sudo apt-get install unity-tweak-tool
+sudo apt-get install paper-icon-theme
 
 # Switch to prefered themes
 dconf write /org/gnome/desktop/interface/gtk-theme '"Arc-Dark"'
