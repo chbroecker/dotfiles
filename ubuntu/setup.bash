@@ -59,7 +59,7 @@ mkdir .fonts
 mkdir -p .config/fontconfig/conf.d
 fc-cache -vf ~/.fonts/ 	# clearing font cache
 mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d
-cp ~/.dotfiles/resources/powerline-symbols.ttf /usr/share/fonts/truetype/
+sudo cp ~/.dotfiles/resources/powerline-symbols.ttf /usr/share/fonts/truetype/
 
 # Setting up Tmux to use the TPM
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
