@@ -9,5 +9,3 @@ for file in $DOTFILES_DIR/system/*;
 do 
 	source $file; 
 done;
-# added by Anaconda3 5.1.0 installer
-export PATH="/Users/chbroecker/anaconda3/bin:$PATH"
