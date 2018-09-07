@@ -24,6 +24,7 @@ let g:lightline = {
 
 " ColorTheme
 syntax on
+set term=screen-256color
 "let g:onedark_terminal_italics = 1
 colorscheme onedark
 
@@ -33,6 +34,11 @@ let g:python_highlight_all = 1
 " NerdTree
 " autocmd vimenter * NERDTree
 nmap <F2> :NERDTreeToggle<CR>
+
+noremap <Up> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+noremap <Down> <NOP>
 
 " Other
 set encoding=utf-8
