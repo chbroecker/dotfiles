@@ -52,3 +52,5 @@ set number relativenumber
 "    \ set expandtab
 "    \ set autoindent
 "    \ set fileformat=unix
+
+autocmd BufNewFile,BufRead *.launch set syntax=xml
