@@ -4,6 +4,14 @@
 
 git clone git@github.com:chbroecker/dotfiles.git .dotfiles
 
+## TODO
+[] implement TMUX powerline tabs when TPM can't be loaded for some reason
+[] figure out what is actually needed for a working powerline font
+[] colors are weird. vim and tmux colors are different even though according to the code they are the same. Current fix is to change the black color in the tmux-onedark-theme.tmux file to #2c2527
+[] figure out how to reliably remap caps lock to ESC
+[] improve prompt
+[] is installing prompt automated yet??
+[] add docs for key mappings in different programs (vim, tmux, etc.)
 
 ## Sublime
 * setting up the sublime CLI 
