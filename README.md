@@ -37,3 +37,6 @@ http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
 	* change `XKBOPTIONS=""` to `XKBOPTIONS="ctrl:swapcaps"`
 	* sudo dpkg-reconfigure -phigh console-setup
 	* reboot
+	
+## Miscellaneous
+* Show hidden files in Finder on macOS: <kbd>CMD</kbd> + <kbd>shift</kbd> + <kbd>.</kbd>
