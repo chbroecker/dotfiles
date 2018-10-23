@@ -4,19 +4,9 @@
 
 git clone git@github.com:chbroecker/dotfiles.git .dotfiles
 
-## TODO
-- [ ] implement TMUX powerline tabs when TPM can't be loaded for some reason
-- [ ] figure out what is actually needed for a working powerline font
-- [ ] colors are weird. vim and tmux colors are different even though according to the code they are the same. Current fix is to change the black color in the tmux-onedark-theme.tmux file to #2c2527
-- [ ] figure out how to reliably remap caps lock to ESC
-- [ ] improve prompt
-- [ ] is installing prompt automated yet??
-- [ ] add docs for key mappings in different programs (vim, tmux, etc.)
-
 ## Sublime
 * setting up the sublime CLI 
 	* ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
-
 
 ## Sources
 
@@ -47,3 +37,6 @@ http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
 	* change `XKBOPTIONS=""` to `XKBOPTIONS="ctrl:swapcaps"`
 	* sudo dpkg-reconfigure -phigh console-setup
 	* reboot
+	
+## Miscellaneous
+* Show hidden files in Finder on macOS: <kbd>CMD</kbd> + <kbd>shift</kbd> + <kbd>.</kbd>
