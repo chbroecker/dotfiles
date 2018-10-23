@@ -9,6 +9,8 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'joshdick/onedark.vim'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 call vundle#end()
 
@@ -22,6 +24,8 @@ let g:lightline = {
     \ 'separator': { 'left': '', 'right': '' },
     \ 'subseparator': { 'left': '', 'right': '' }}
 
+let g:onedark_color_overrides = { 
+			\ "black": {"gui": "#000000", "cterm": "0", "cterm16": "0"}}
 " ColorTheme
 syntax on
 set term=screen-256color
