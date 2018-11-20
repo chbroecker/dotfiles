@@ -11,6 +11,8 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 call vundle#end()
 
@@ -38,6 +40,30 @@ let g:python_highlight_all = 1
 " NerdTree
 " autocmd vimenter * NERDTree
 nmap <F2> :NERDTreeToggle<CR>
+"let g:NERDTreeFileExtensionHighlightFullName = 0
+
+" Improves performance of the SyntaxHighlighting and removes the lag
+let g:NERDTreeSyntaxDisableDefaultExtensions = 1
+let g:NERDTreeSyntaxEnabledExtensions = ['c', 'h', 'cpp', 'hpp', 'py', 'md', 'txt', 'java', 'sh', 'vim', 'json']
+
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
+
+" After a re-source fixes the bug with the [] 
+if exists('g:loaded_webdevicons')
+  call webdevicons#refresh()
+endif
+
+" Needed to remove the '/' from behind the directory names in NerdTree
+augroup nerdtreehidecwd
+	autocmd!
+	autocmd FileType nerdtree setlocal conceallevel=3 | syntax match NERDTreeDirSlash #/$# containedin=NERDTreeDir conceal contained
+augroup end
+
+" According to Github a possible way to remove the arrow keys in NerdTree that
+" indicate if a folder is opened or not
+"let NERDTreeDirArrowExpandable = "<C-V>u00a0"
+"let NERDTreeDirArrowCollapsible = "<C-V>u00a0"
 
 noremap <Up> <NOP>
 noremap <Left> <NOP>
