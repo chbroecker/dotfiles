@@ -37,8 +37,8 @@ colorscheme onedark
 " Python
 let g:python_highlight_all = 1
 
+" ---------------------------------------------NERDTree------------------------------
 " NerdTree
-" autocmd vimenter * NERDTree
 nmap <F2> :NERDTreeToggle<CR>
 "let g:NERDTreeFileExtensionHighlightFullName = 0
 
@@ -49,7 +49,7 @@ let g:NERDTreeSyntaxEnabledExtensions = ['c', 'h', 'cpp', 'hpp', 'py', 'md', 'tx
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 let g:DevIconsEnableFoldersOpenClose = 1
 
-" After a re-source fixes the bug with the [] 
+" After a re-source fixes the bug with the [] around devicons
 if exists('g:loaded_webdevicons')
   call webdevicons#refresh()
 endif
@@ -60,10 +60,15 @@ augroup nerdtreehidecwd
 	autocmd FileType nerdtree setlocal conceallevel=3 | syntax match NERDTreeDirSlash #/$# containedin=NERDTreeDir conceal contained
 augroup end
 
-" According to Github a possible way to remove the arrow keys in NerdTree that
-" indicate if a folder is opened or not
-"let NERDTreeDirArrowExpandable = "<C-V>u00a0"
-"let NERDTreeDirArrowCollapsible = "<C-V>u00a0"
+" Removes the little arrows that indicate whether a folder is open or not
+" These are not needed anymore because of the folder icons from devicons
+let NERDTreeDirArrowExpandable = "\u00a0"
+let NERDTreeDirArrowCollapsible = "\u00a0"
+let NERDTreeNodeDelimiter = "\x07"
+
+"removes the Help message at the top of the NERDTree
+let NERDTreeMinimalUI=1
+"----------------------------------------------NERDTree------------------------------
 
 noremap <Up> <NOP>
 noremap <Left> <NOP>
