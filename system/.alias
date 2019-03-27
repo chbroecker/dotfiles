@@ -12,3 +12,5 @@ alias reload="source ~/.bash_profile"
 
 # Recursively remove .DS_Store files
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete" 
+
+alias tmuxn="tmux new-session"

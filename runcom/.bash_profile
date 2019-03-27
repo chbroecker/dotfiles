@@ -9,3 +9,5 @@ for file in $DOTFILES_DIR/system/*;
 do 
 	source $file; 
 done;
+
+alias tmuxn="tmux new-session -s"

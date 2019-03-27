@@ -13,6 +13,7 @@ brew cask install spotify
 brew cask install visual-studio-code
 brew cask install 1password
 brew cask install sublime
+brew cask install iterm2
 
 ## Lookat
 # mackup
