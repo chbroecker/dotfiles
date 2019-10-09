@@ -19,3 +19,5 @@ vim +PluginInstall +qall
 # Setting up Tmux to use the TPM
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ~/.tmux/plugins/tpm/bin/install_plugins
+
+bash install-fonts.bash
