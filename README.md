@@ -26,7 +26,7 @@ git clone git@github.com:chbroecker/dotfiles.git .dotfiles
 *  Remapping `CAPS-LOCK` to `CTRL`
 	* in **/etc/default/keyboard** or in **/etc/default/console-setup**
 	* change `XKBOPTIONS=""` to `XKBOPTIONS="ctrl:swapcaps"`
-	* sudo dpkg-reconfigure -phigh console-setup
+	* `sudo dpkg-reconfigure -phigh console-setup`
 	* reboot
 
 # macOS
