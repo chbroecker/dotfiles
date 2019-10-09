@@ -6,7 +6,7 @@ git clone git@github.com:chbroecker/dotfiles.git .dotfiles
 ln -s ~/.dotfiles/tmux/.tmux.conf ~/
 ln -s ~/.dotfiles/vim/.vimrc ~/
 
-echo "source ~/dotfiles/setup/system_source.bash" >> ~/.bashrc
+echo "source ~/dotfiles/system/source-preferences.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # Installing the current vim and vundle
