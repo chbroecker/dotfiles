@@ -6,6 +6,9 @@ git clone git@github.com:chbroecker/dotfiles.git .dotfiles
 ln -s ~/.dotfiles/tmux/.tmux.conf ~/
 ln -s ~/.dotfiles/vim/.vimrc ~/
 
+echo "source ~/dotfiles/setup/system_source.bash" >> ~/.bashrc
+source ~/.bashrc
+
 # Installing the current vim and vundle
 sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update

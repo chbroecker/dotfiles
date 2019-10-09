@@ -2,15 +2,14 @@
 
 alias l="ls -lahA $LS_COLORS $LS_TIMESTYLEISO $LS_GROUPDIRSFIRST"
 alias ld="ls -ld */"   # List in long format, only directories
-# alias ls='ls -Fa'
 
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
-alias reload="source ~/.bash_profile"
+alias reload="source ~/.dotfiles/setup/.system_source.bash"
 
 # Recursively remove .DS_Store files
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete" 
 
-alias tmuxn="tmux new-session"
+alias tmuxn="tmux new-session -s"
