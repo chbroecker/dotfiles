@@ -3,10 +3,12 @@ sudo apt install tmux git cmake valgrind build-essential fonts-powerline
 
 # Installing Dotfiles
 git clone git@github.com:chbroecker/dotfiles.git .dotfiles
+# git clone https://github.com/chbroecker/dotfiles.git .dotfiles
+
 ln -s ~/.dotfiles/tmux/.tmux.conf ~/
 ln -s ~/.dotfiles/vim/.vimrc ~/
 
-echo "source ~/dotfiles/system/source-preferences.bash" >> ~/.bashrc
+echo "source ~/.dotfiles/system/source-preferences.bash" >> ~/.bashrc
 source ~/.bashrc
 
 # Installing the current vim and vundle
@@ -20,4 +22,4 @@ vim +PluginInstall +qall
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ~/.tmux/plugins/tpm/bin/install_plugins
 
-bash install-fonts.bash
+bash ~/.dotfiles/setup/ubuntu/install-fonts.bash
