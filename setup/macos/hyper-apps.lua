@@ -24,20 +24,19 @@ function giveMeT()
 end
 
 return {
-  { 'i', 'iTunes' },            -- "I" for "Itunes"
-  { 'a', 'Agenda' },            -- "A" for "Agenda"
+  { 'i', 'Music' },       -- "I" for "Itunes"
+  { 'a', 'Agenda' },      -- "A" for "Agenda"
   { 'b', 'iBooks' },     	-- "B" for "Browser"
   { 'c', 'Calendar' },		-- "C for "Calendar"
   { 'd', 'Things3' }, 		-- "D" for "Do!" ... or "Done!"
-  { 'e', 'Atom' },              -- "E" for "Editor"
-  { 'f', 'Finder' },            -- "F" for "Finder"
+  { 'e', 'Visual Studio Code' },  -- "E" for "Editor"
+  { 'f', 'Finder' },        -- "F" for "Finder"
   { 'g', 'Mail' }, 	      	-- "G" for "Gmail"
-  { 's', 'Safari' },            -- "S" for "Safari"
-  { 't', 'iTerm' },             -- "T" for "Terminal"
-  { 'r', 'Rocket.Chat.app' },	-- "R" for "RocketChat"
-  { 'm', 'Spotify'},		-- "M" for "Music"
-  { 'n', 'Notes'},		-- "N" for "Notes"
-  { 'p', 'Preview'},		-- "P" for "Preview"
+  { 's', 'Safari' },        -- "S" for "Safari"
+  { 't', 'iTerm' },         -- "T" for "Terminal"
+  { 'm', 'Spotify'},    		-- "M" for "Music"
+  { 'n', 'Notes'},		      -- "N" for "Notes"
+  { 'p', 'Preview'},    		-- "P" for "Preview"
   { 'l', giveMeAt },
   { ';', giveMeO },
   { "'", giveMeA },
