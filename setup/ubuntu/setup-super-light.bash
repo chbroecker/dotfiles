@@ -1,4 +1,4 @@
-sudo apt install tmux git vim fonts-powerline
+sudo apt install tmux git vim zsh fonts-powerline
 
 git clone https://github.com/chbroecker/dotfiles.git .dotfiles
 
