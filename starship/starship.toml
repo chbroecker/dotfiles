@@ -1,23 +1,36 @@
 format = """
-[](#FFAA00)\
+[](orange)\
 $os\
 $username\
-[](bg:#7AA2F7 fg:#FFAA00)\
+[](bg:light-blue fg:orange)\
 $directory\
-[](fg:#7AA2F7 bg:#394260)\
+[](fg:light-blue bg:#394260)\
 $git_branch\
 $git_status\
-[](fg:#394260 bg:#1A1B26)\
+[](fg:#394260 bg:background)\
 $fill\
 $sudo\
 $git_state\
 $rust\
-$python\
+$custom\
 $battery\
 \n$character"""
 
+palette = "tokyo-day"
+
+[palettes.tokyo-dark]
+background = "#1A1B26"
+orange = "#FFAA00"
+light-blue = "#7AA2F7"
+grey-blue = "#3B4261"
+
+[palettes.tokyo-day]
+background = "#E1E2E7"
+orange = "#FFAA00"
+light-blue = "#7AA2F7"
+
 [os]
-style = "bg:#FFAA00 fg:#000000"
+style = "bg:orange fg:#000000"
 disabled = false # Disabled by default
 [os.symbols] # Overwrites for default icons
 Macos = "  "
@@ -33,8 +46,8 @@ format = '[ $user]($style)'
 disabled = false
 
 [directory]
-style = "fg:#1A1B26 bg:#7AA2F7"
-format = "[ $path ]($style)"
+style = "fg:#1A1B26 bg:light-blue"
+format = "[ $path]($style)"
 truncation_length = 4
 truncation_symbol = "…/"
 [directory.substitutions]
@@ -45,7 +58,7 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-format = '[[ $symbol $branch ](fg:#7AA2F7 bg:#394260)]($style)'
+format = '[[ $symbol $branch ](fg:light-blue bg:#394260)]($style)'
 
 [git_status]
 style = "bg:#394260"
@@ -65,12 +78,19 @@ format = '[ $symbol ($version) ]($style)'
 [python]
 symbol = ""
 style = "yellow bold"
-format = '[ $symbol ($version) ]($style)'
+format = '[${symbol} (${version} )(\($virtualenv\) )]($style)'
 
 [[battery.display]]
 threshold = 50
 style = 'bold red'
 
 [character]
-success_symbol = '[➜](bold green) '
+# success_symbol = '[➜](bold green) '
+success_symbol = '[\$](bold green) '
 error_symbol = '[✗](bold red) '
+
+[custom.uv]
+command = 'cat .python-version'
+detect_files = ['uv.lock']
+symbol = ' v'
+style = 'bold yellow'
